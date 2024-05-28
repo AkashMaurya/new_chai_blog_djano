@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+
+  <p class="text-4xl">This is Chai Detail Page</p>
+
+  <!-- my tables -->
+  <ul>
+    <li> {{chai_data.id}}</li>
+    <li>{{chai_data.name}}</li>
+    <li> <img class="lg:h-48 md:h-36  object-cover object-center" src="/media/{{chai_data.image}}" alt="blog"></li>
+    <li>{{chai_data.data_added}}</li>
+    <li>{{chai_data.type_of_chai}}</li>
+  </ul>  
+  
+ 
+ 
+</body>
+
+{% endblock content %}
